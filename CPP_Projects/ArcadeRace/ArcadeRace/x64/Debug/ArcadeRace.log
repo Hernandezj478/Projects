@@ -1,0 +1,16 @@
+﻿  Source.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\olcConsoleGameEngine.h(759,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\olcConsoleGameEngine.h(1099,31): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\olcConsoleGameEngine.h(1196,4): warning C4312: 'type cast': conversion from 'DWORD' to 'olcConsoleGameEngine *' of greater size
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(189,33): warning C4129: '#': unrecognized character escape sequence
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(133,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(134,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(135,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(136,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(140,64): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(141,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(162,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(204,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(205,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\ArcadeRace\Source.cpp(206,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ArcadeRace.vcxproj -> C:\Users\herna\Desktop\Random\Visual Studio Solutions\ArcadeRace\x64\Debug\ArcadeRace.exe
