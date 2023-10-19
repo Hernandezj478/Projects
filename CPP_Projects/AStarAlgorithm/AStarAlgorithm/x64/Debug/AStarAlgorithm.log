@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\AStarAlgorithm\AStarAlgorithm\olcConsoleGameEngine.h(759,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\AStarAlgorithm\AStarAlgorithm\olcConsoleGameEngine.h(1099,31): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\AStarAlgorithm\AStarAlgorithm\olcConsoleGameEngine.h(1196,4): warning C4312: 'type cast': conversion from 'DWORD' to 'olcConsoleGameEngine *' of greater size
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\AStarAlgorithm\AStarAlgorithm\Source.cpp(132,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  AStarAlgorithm.vcxproj -> C:\Users\herna\Desktop\Random\Visual Studio Solutions\AStarAlgorithm\x64\Debug\AStarAlgorithm.exe
