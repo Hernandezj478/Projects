@@ -1,0 +1,37 @@
+﻿  Source.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\olcConsoleGameEngine.h(759,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\olcConsoleGameEngine.h(1099,31): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\olcConsoleGameEngine.h(1196,4): warning C4312: 'type cast': conversion from 'DWORD' to 'olcConsoleGameEngine *' of greater size
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(62,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(78,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(88,15): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(88,10): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(92,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(174,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(175,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(191,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(217,85): warning C4244: 'argument': conversion from '_Ty2' to 'int', possible loss of data
+          with
+          [
+              _Ty2=float
+          ]
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(217,41): warning C4244: 'argument': conversion from '_Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=float
+          ]
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(216,93): warning C4244: 'argument': conversion from '_Ty2' to 'int', possible loss of data
+          with
+          [
+              _Ty2=float
+          ]
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(216,49): warning C4244: 'argument': conversion from '_Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=float
+          ]
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(224,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(224,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(225,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\Astroids\Source.cpp(225,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Astroids.vcxproj -> C:\Users\herna\Desktop\Random\Visual Studio Solutions\Astroids\x64\Debug\Asteroids.exe
