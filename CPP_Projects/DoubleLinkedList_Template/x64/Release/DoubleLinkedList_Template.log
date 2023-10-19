@@ -1,0 +1,6 @@
+﻿  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 59 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DoubleLinkedList_Template.vcxproj -> C:\Users\herna\Desktop\Random\Visual Studio Solutions\DoubleLinkedList_Template\x64\Release\DoubleLinkedList_Template.exe
