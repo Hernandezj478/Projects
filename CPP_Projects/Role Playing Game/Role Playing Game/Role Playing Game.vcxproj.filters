@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RPG_Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olcConsoleGameEngineOOP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Assets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Dynamics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Quest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG_Items.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RPG_Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olcConsoleGameEngineOOP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Assets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Dynamics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Quest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG_Items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rpgdata\gfx\olc_sprite.exe" />
+    <None Include="rpgdata\gfx\SpriteEditor.exe" />
+    <None Include="rpgdata\gfx\toml_village.spr" />
+    <None Include="rpgdata\map\village1.lvl" />
+    <None Include="rpgdata\gfx\toml_spritesheetdark.spr" />
+    <None Include="minijario.spr" />
+    <None Include="rpgdata\gfx\balloon1.png.spr" />
+    <None Include="rpgdata\gfx\javidx9_nesfont8x8.spr" />
+    <None Include="rpgdata\gfx\sky1.png.spr" />
+    <None Include="rpgdata\gfx\sprites_items.png.spr" />
+    <None Include="rpgdata\gfx\Sword.spr" />
+    <None Include="rpgdata\gfx\title3.png.spr" />
+    <None Include="rpgdata\gfx\toml_char001.png.spr" />
+    <None Include="rpgdata\gfx\toml_CharacterSprites.spr" />
+    <None Include="rpgdata\gfx\worldmap1.png.spr" />
+    <None Include="rpgdata\gfx\toml_modernish.spr" />
+    <None Include="rpgdata\map\home.lvl" />
+    <None Include="rpgdata\gfx\SeditSlimeTransparent.spr" />
+    <None Include="rpgdata\gfx\weapon_basic_sword.spr" />
+    <None Include="rpgdata\gfx\toml_purple.spr" />
+    <None Include="rpgdata\gfx\item_healthboost.spr" />
+    <None Include="rpgdata\gfx\item_health.spr" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,47 @@
+﻿  RPG_Assets.cpp
+  RPG_Commands.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Commands.cpp(94,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  RPG_Dynamics.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Dynamics.cpp(79,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Dynamics.cpp(79,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Dynamics.cpp(120,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Dynamics.cpp(120,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Dynamics.cpp(120,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  RPG_Engine.cpp
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(77,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(77,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(77,154): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(77,131): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(78,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(83,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(83,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(83,172): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(83,140): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(84,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(90,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(90,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(90,171): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(90,135): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(91,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(96,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(96,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(96,180): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(96,144): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(97,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(149,90): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(150,92): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(160,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(160,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(164,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(164,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(189,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(191,79): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\Role Playing Game\RPG_Engine.cpp(225,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  RPG_Map.cpp
+  main.cpp
+  Generating code
+  6 of 810 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Role Playing Game.vcxproj -> C:\Users\herna\Desktop\Random\Visual Studio Solutions\Role Playing Game\x64\Release\Role Playing Game.exe
