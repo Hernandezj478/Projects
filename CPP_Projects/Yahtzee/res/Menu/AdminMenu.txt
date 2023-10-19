@@ -1,0 +1,11 @@
+                      ______________________________________________________
+                     | Admin Menu                                           |
+                     |                                                      |
+                     |                                                      |
+                     |        Please Select from the following:             |
+                     |              1. View Registered Players              |
+                     |              2. Remove Player                        |
+                     |              3. Back                                 |
+                     |                                                      |
+                     |                                                      |
+                     |______________________________________________________|

@@ -1,0 +1,21 @@
+		 _______________________________________________________________
+		|       __________________________________________________	|
+		|      |   Upper Section       |	What to Score     |	|
+		|      |_______________________|__________________________|	|
+		|      |  Aces (Ones)          |    Total of Aces only	  |	|
+		|      |  Twos                 |    Total of Twos only    |	|
+		|      |  Threes               |    Total of Threes only  |	|
+		|      |  Fours                |    Total of Fours only   |     |
+		|      |  Fives                |    Total of Fives only   |	|
+		|      |  Sixes                |    Total of Sixes only   |	|
+		|      |--------------------------------------------------|	|
+		|      |  Lower Section        |                          |     |
+		|      |  3 of a Kind          |    Total of all 5 dice	  |	|
+		|      |  4 of a Kind          |    Total of all 5 dice   |	|
+		|      |  Full House           |    25 points		  |     |
+		|      |  Sm Straight          |    30 points             |     |
+		|      |  Lg Straight          |    40 points             |     |
+		|      |  Yahtzee (5 of a kind)|    50 points             |     |
+		|      |  Chance               |    Total of all 5 dice   |     |
+                |      |_______________________|__________________________|	|
+		|_______________________________________________________________|
