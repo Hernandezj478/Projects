@@ -3,7 +3,7 @@
 Welcome to my **C++ Projects Portfolio**, a curated collection of applications and algorithms developed through coursework and independent exploration.  
 These projects highlight my skills in **modern C++**, **object-oriented programming**, and **software design**, as well as my ability to create functional, optimized, and well-documented systems.
 
-Each project demonstrates progressive learning — from implementing core data structures to designing full interactive applications and simulations.
+Each project demonstrates progressive learning - from implementing core data structures to designing full interactive applications and simulations.
 
 ---
 
