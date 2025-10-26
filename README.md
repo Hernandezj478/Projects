@@ -1,7 +1,9 @@
 # 🧠 C++ Projects Portfolio
 
-This repository contains a collection of **C++ applications and algorithms** that demonstrate my progression through coursework and independent learning in computer science.  
-Each project explores different aspects of **software engineering**, **data structures**, and **game development** — highlighting my ability to design, debug, and deliver efficient solutions.
+Welcome to my **C++ Projects Portfolio**, a curated collection of applications and algorithms developed through coursework and independent exploration.  
+These projects highlight my skills in **modern C++**, **object-oriented programming**, and **software design**, as well as my ability to create functional, optimized, and well-documented systems.
+
+Each project demonstrates progressive learning — from implementing core data structures to designing full interactive applications and simulations.
 
 ---
 
@@ -9,37 +11,46 @@ Each project explores different aspects of **software engineering**, **data stru
 
 | Project | Description | Key Topics |
 |----------|--------------|-------------|
-| **AStarAlgorithm** | Visualization of the A* pathfinding algorithm using console graphics. | Pathfinding, heuristic search |
-| **ArcadeRace** | Simple console-based racing simulation using custom graphics engine. | Game loop, input handling |
-| **Asteroids** | Recreation of the classic game with physics and shooting mechanics. | Game design, 2D physics |
-| **Best_AVL** | Implementation of AVL trees with insert/delete/rebalance logic. | Data structures, recursion |
-| **BloomFilter** | Probabilistic set membership structure with multiple hash functions. | Hashing, algorithms |
-| **ConFPS** | Experimental first-person shooter in console mode. | Rendering, collision detection |
-| **DoubleLinkedList_Template** | Generic templated doubly-linked list with iterators. | Templates, OOP |
-| **Frogger** | Recreation of Frogger using console rendering. | Game development, state management |
-| **KeypadHash** | Hash-based keypad authentication system. | Hashing, user input |
-| **MasterMind** | Classic logic puzzle implemented in C++. | Control flow, randomization |
-| **RolePlayingGame** | Object-oriented RPG framework with assets, quests, and items. | OOP design, systems architecture |
-| **Tetris** | Console-based Tetris clone. | Arrays, collision logic |
-| **TimeTracker** | Multi-user time logging application with SHA encryption. | File I/O, security, modular design |
-| **WavePropagation** | Advanced grid-based pathfinding algorithm inspired by A*, using wavefront expansion to calculate optimal routes. Includes visual output and performance tuning. | AI algorithms, optimization, pathfinding |
-| **Yahtzee** | CLI implementation of Yahtzee with user authentication and scoring. | File I/O, OOP, game logic |
+| **AStarAlgorithm** | Early implementation of a heuristic-based pathfinding algorithm with step-by-step grid traversal. | Pathfinding, graph traversal |
+| **ArcadeRace** | Console-based racing simulation using custom text-based rendering. | Game loop, input handling |
+| **Asteroids** | Recreation of the classic *Asteroids* game featuring real-time movement and shooting mechanics. | Game design, 2D physics |
+| **Best_AVL** | Self-balancing binary search tree with insertion, deletion, and rotation logic. | Data structures, recursion |
+| **BloomFilter** | Probabilistic data structure for fast set membership tests with multiple hash functions. | Hashing, algorithms |
+| **ConFPS** | Experimental console first-person shooter prototype built using ASCII rendering. | Rendering, input systems |
+| **DoubleLinkedList_Template** | Generic doubly-linked list implemented using templates and iterators. | Templates, OOP |
+| **Frogger** | Recreation of the classic *Frogger* game, complete with obstacle management and scoring. | State management, collision detection |
+| **KeypadHash** | Command-line keypad authentication system that uses hashing for secure access. | Cryptography, file I/O |
+| **MasterMind** | Command-line version of the classic color-code guessing game. | Randomization, control flow |
+| **RolePlayingGame** | Object-oriented RPG framework featuring item systems, character stats, and combat logic. | Systems architecture, OOP design |
+| **Tetris** | Console-based *Tetris* clone implemented with efficient rotation and collision logic. | Algorithms, game design |
+| **TimeTracker** | Multi-user time logging application with file-based data persistence and SHA encryption. | File I/O, security, modular programming |
+| **WavePropagation** | Advanced grid-based pathfinding algorithm inspired by A*, using wavefront expansion to calculate optimal routes. Includes visualization and optimization features. | AI algorithms, pathfinding, optimization |
+| **Yahtzee** | Console implementation of *Yahtzee* featuring authentication, file-based score tracking, and user profiles. | File I/O, OOP, game logic |
 
 ---
 
 ## 🧰 Technologies Used
-- **C++17**
-- **Visual Studio**, **NetBeans**, and **CMake**
-- **olcConsoleGameEngine** for visualization projects
-- **Standard Template Library (STL)**: `vector`, `map`, `set`, `queue`
-- **Object-Oriented Design**, **Templates**, and **Encapsulation**
+
+- **C++17 / C++20**
+- **Visual Studio** and **NetBeans**
+- **CMake** (for cross-platform builds)
+- **olcConsoleGameEngine** (for visualization projects)
+- **STL containers and algorithms**
+- **OOP design principles**, **encapsulation**, and **template programming**
 
 ---
 
-## 🚀 How to Run
-Each project can be opened as a Visual Studio solution (`.sln`) or compiled manually:
+## 🚀 Building and Running
 
+Most projects can be built using Visual Studio or any C++17-compatible compiler.
+
+### ▶️ Visual Studio
+1. Open the `.sln` file inside the project folder.
+2. Build and run (F5).
+
+### 💻 Manual (CMake or g++)
 ```bash
-# Example (Linux)
-cd Best_AVL
-make run
+# Example using g++
+cd CPP_Projects/Best_AVL
+g++ -std=c++17 -O2 *.cpp -o BestAVL
+./BestAVL
