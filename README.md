@@ -9,7 +9,7 @@ Each project explores different aspects of **software engineering**, **data stru
 
 | Project | Description | Key Topics |
 |----------|--------------|-------------|
-| **AStarAlgorithm** | Early implementation of a heuristic-based pathfinding algorithm. | Pathfinding, graph traversal |
+| **AStarAlgorithm** | Visualization of the A* pathfinding algorithm using console graphics. | Pathfinding, heuristic search |
 | **ArcadeRace** | Simple console-based racing simulation using custom graphics engine. | Game loop, input handling |
 | **Asteroids** | Recreation of the classic game with physics and shooting mechanics. | Game design, 2D physics |
 | **Best_AVL** | Implementation of AVL trees with insert/delete/rebalance logic. | Data structures, recursion |
