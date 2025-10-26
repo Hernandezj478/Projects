@@ -22,7 +22,7 @@ Each project explores different aspects of **software engineering**, **data stru
 | **RolePlayingGame** | Object-oriented RPG framework with assets, quests, and items. | OOP design, systems architecture |
 | **Tetris** | Console-based Tetris clone. | Arrays, collision logic |
 | **TimeTracker** | Multi-user time logging application with SHA encryption. | File I/O, security, modular design |
-| **WavePropagation** | Simulation of wave physics using discrete grid updates. | Simulation, math modeling |
+| **WavePropagation** | Advanced grid-based pathfinding algorithm inspired by A*, using wavefront expansion to calculate optimal routes. Includes visual output and performance tuning. | AI algorithms, optimization, pathfinding |
 | **Yahtzee** | CLI implementation of Yahtzee with user authentication and scoring. | File I/O, OOP, game logic |
 
 ---
