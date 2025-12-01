@@ -14,8 +14,26 @@ using namespace std;
 int myHash(const string &);
 
 int main(int argc, char** argv) {
-    int value=myHash("JCH");
-    cout<<value<<endl;
+    bool finish = false;
+    while(!finish)
+    {
+        cout << "Enter keypad letter value to be hashed or type 'quit' to exit: ";
+        string input;
+        cin >> input;
+        // parse input to lower-case. Do not change original input value
+        string parseString = input;
+        for(string::iterator it = parseString.begin(); it!=parseString.end(); ++it)
+        {
+            *it = tolower(*it);
+        }
+        if(parseString == "quit")
+        {
+            finish = true;
+            return 0;
+        }
+        int value=myHash(input);
+        cout<<value<<endl;
+    }
     return 0;
 }
 

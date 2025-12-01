@@ -1,0 +1,71 @@
+# =======================
+# Core C++ Ignore Rules
+# =======================
+
+# Object & Build Artifacts
+*.o
+*.obj
+*.lo
+*.slo
+*.suo
+*.sdf
+*.opensdf
+*.pdb
+*.pch
+*.ipch
+*.idb
+*.res
+*.ilk
+
+# Compiled Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+*.out
+
+# Static & Shared Libraries
+*.lib
+*.a
+*.la
+*.lai
+
+# Precompiled Headers
+*.gch
+
+# =======================
+# Visual Studio
+# =======================
+.vs/
+*.VC.db
+*.VC.opendb
+*.vsconfig
+
+# Build Directories
+x64/
+x86/
+Release/
+Debug/
+build/
+bin/
+Binaries/
+
+# =======================
+# IDE / OS / Misc
+# =======================
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.vsidx
+.DS_Store
+Thumbs.db
+
+# =======================
+# NetBeans
+# =======================
+nbproject/private/
+build/
+dist/
