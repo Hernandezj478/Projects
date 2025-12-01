@@ -64,8 +64,15 @@ Binaries/
 Thumbs.db
 
 # =======================
-# NetBeans
+# NetBeans C++ Projects =====
 # =======================
 nbproject/private/
+nbproject/Makefile-*.mk
+nbproject/Configurations.xml
+nbproject/Project.xml
+Makefile
+Makefile-*.mk
+package-*.bash
 build/
 dist/
+*.dep
