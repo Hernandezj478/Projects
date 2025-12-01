@@ -1,4 +1,4 @@
-# 🧠 C++ Projects Portfolio
+# C++ Projects Portfolio
 
 Welcome to my **C++ Projects Portfolio**, a curated collection of applications and algorithms developed through coursework and independent exploration.  
 These projects highlight my skills in **modern C++**, **object-oriented programming**, and **software design**, as well as my ability to create functional, optimized, and well-documented systems.
@@ -7,7 +7,7 @@ Each project demonstrates progressive learning - from implementing core data str
 
 ---
 
-## 📂 Repository Overview
+## Repository Overview
 
 | Project | Description | Key Topics |
 |----------|--------------|-------------|
@@ -29,7 +29,7 @@ Each project demonstrates progressive learning - from implementing core data str
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **C++17 / C++20**
 - **Visual Studio** and **NetBeans**
@@ -40,15 +40,15 @@ Each project demonstrates progressive learning - from implementing core data str
 
 ---
 
-## 🚀 Building and Running
+## Building and Running
 
 Most projects can be built using Visual Studio or any C++17-compatible compiler.
 
-### ▶️ Visual Studio
+### Visual Studio
 1. Open the `.sln` file inside the project folder.
 2. Build and run (F5).
 
-### 💻 Manual (CMake or g++)
+### Manual (CMake or g++)
 ```bash
 # Example using g++
 cd CPP_Projects/Best_AVL
