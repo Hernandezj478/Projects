@@ -63,16 +63,37 @@ Binaries/
 .DS_Store
 Thumbs.db
 
-# =======================
-# NetBeans C++ Projects =====
-# =======================
+# =====================================
+# NetBeans C/C++ auto-generated files
+# =====================================
+
+# Entire NetBeans project settings
+nbproject/
+
+# Remove all private metadata
 nbproject/private/
+
+# NetBeans indexer files
+c_standard_headers_indexer.c
+cpp_standard_headers_indexer.cpp
+
+# NetBeans config XML files
 nbproject/Makefile-*.mk
 nbproject/Configurations.xml
 nbproject/Project.xml
+nbproject/private/configurations.xml
+nbproject/private/private.xml
+
+# NetBeans build scripts
+package-*.bash
+
+# Generated makefiles
 Makefile
 Makefile-*.mk
-package-*.bash
+
+# Build output folders
 build/
 dist/
+
+# NetBeans dependency files
 *.dep
