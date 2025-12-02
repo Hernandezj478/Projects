@@ -3,23 +3,27 @@
 #include <cstdlib>
 #include <time.h>
 #include <vector>
+#include <chrono>
 
 using namespace std;
 
 #include <stdio.h>
 #include <windows.h>
 
-int nScreenWidth = 160;
-int nScreenHeight = 100;
+// Ensure console display is default to 80x30. Otherwise there will be artifacting and the game will not run properly.
+int nScreenWidth = 80;
+int nScreenHeight = 30;
 wstring tetromino[7];
 int nFieldWidth = 12;
 int nFieldHeight = 18;
 unsigned char* pField = nullptr;
 
 
-int Rotate(int px, int py, int r) {
+int Rotate(int px, int py, int r) 
+{
 	int pi = 0;
-	switch (r % 4) {
+	switch (r % 4) 
+	{
 		case 0: // 0 deg					//	0	1	2	3
 			pi = py * 4 + px;				//	4	5	6	7
 			break;							//	8	9	10	11
@@ -45,9 +49,12 @@ int Rotate(int px, int py, int r) {
 	return pi;
 }
 
-bool DoesPeiceFit(int nTetromino, int nRotation, int nPosX, int nPosY) {
-	for (int px = 0; px < 4; px++) {
-		for (int py = 0; py < 4; py++) {
+bool DoesPieceFit(int nTetromino, int nRotation, int nPosX, int nPosY) 
+{
+	for (int px = 0; px < 4; px++) 
+	{
+		for (int py = 0; py < 4; py++) 
+		{
 			// Get index into piece
 			int pi = Rotate(px, py, nRotation);
 
@@ -55,9 +62,14 @@ bool DoesPeiceFit(int nTetromino, int nRotation, int nPosX, int nPosY) {
 			int fi = (nPosY + py) * nFieldWidth + (nPosX + px);
 
 
-			if (nPosX + px >= 0 && nPosX + px < nFieldWidth) {
-				if (nPosY + py >= 0 && nPosY + py < nFieldHeight) {
-					if (tetromino[nTetromino][pi] != L'.' && pField[fi] != 0) return false;
+			if (nPosX + px >= 0 && nPosX + px < nFieldWidth) 
+			{
+				if (nPosY + py >= 0 && nPosY + py < nFieldHeight) 
+				{
+					if (tetromino[nTetromino][pi] != L'.' && pField[fi] != 0)
+					{
+						return false; // Fail on first hit
+					}
 				}
 			}
 		}
@@ -66,7 +78,8 @@ bool DoesPeiceFit(int nTetromino, int nRotation, int nPosX, int nPosY) {
 	return true;
 }
 
-int main() {
+int main() 
+{
 	// Seed
 	srand((unsigned int)time(0));
 
@@ -114,8 +127,9 @@ int main() {
 	tetromino[6].append(L"..X.");
 	tetromino[6].append(L"..X.");
 
-	pField = new unsigned char[nFieldWidth * nFieldHeight];
-	for (int x = 0; x < nFieldWidth; x++) {
+	pField = new unsigned char[nFieldWidth * nFieldHeight]; // Create playfield
+	for (int x = 0; x < nFieldWidth; x++) // Board boudary
+	{
 		for (int y = 0; y < nFieldHeight; y++) {
 			pField[y * nFieldWidth + x] = (x == 0 || x == nFieldWidth - 1 || y == nFieldHeight - 1) ? 9 : 0;
 		}
@@ -142,25 +156,28 @@ int main() {
 
 	vector<int> vLines;
 
-	while (!bGameOver) {
+	while (!bGameOver) 
+	{
 
 		// GAME TIMING ============================================
-		this_thread::sleep_for(50ms);
+		this_thread::sleep_for(50ms);	// Game Tick
 		nSpeedCounter++;
 		bForceDown = ((nSpeedCounter % 20 + 1) == nSpeed);
 
 		// INPUT ==================================================
-		for (int k = 0; k < 4; k++) {
-			bKey[k] = (GetAsyncKeyState((unsigned char)("\x27\x25\x28Z"[k]))) != 0;
+		for (int k = 0; k < 4; k++) 
+		{
+			bKey[k] = (0x8000 & GetAsyncKeyState((unsigned char)("\x27\x25\x28Z"[k]))) != 0; // Left Key, Right Key, Down Key, Z (Rotate)
 		}
 
 		// GAME LOGIC =============================================
-		nCurrentX += (bKey[0] && DoesPeiceFit(nCurrentPiece, nCurrentRotation, nCurrentX + 1, nCurrentY)) ? 1 : 0;
-		nCurrentX -= (bKey[1] && DoesPeiceFit(nCurrentPiece, nCurrentRotation, nCurrentX - 1, nCurrentY)) ? 1 : 0;
-		nCurrentY += (bKey[2] && DoesPeiceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY + 1)) ? 1 : 0;
+		nCurrentX += (bKey[0] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX + 1, nCurrentY)) ? 1 : 0;
+		nCurrentX -= (bKey[1] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX - 1, nCurrentY)) ? 1 : 0;
+		nCurrentY += (bKey[2] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY + 1)) ? 1 : 0;
 
-		if (bKey[3]) {
-			nCurrentRotation += (!bRotateHold && DoesPeiceFit(nCurrentPiece, nCurrentRotation + 1, nCurrentX, nCurrentY)) ? 1 : 0;
+		if (bKey[3]) 
+		{
+			nCurrentRotation += (!bRotateHold && DoesPieceFit(nCurrentPiece, nCurrentRotation + 1, nCurrentX, nCurrentY)) ? 1 : 0;
 			bRotateHold = true;
 		}
 		else
@@ -168,12 +185,18 @@ int main() {
 
 
 		if (bForceDown) {
-			if (DoesPeiceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY + 1)) nCurrentY++;
+			if (DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY + 1))
+			{
+				nCurrentY++; // Keep forcing piece down
+			}
 			else {
 				// Lock the current piece on the field
-				for (int px = 0; px < 4; px++) {
-					for (int py = 0; py < 4; py++) {
-						if (tetromino[nCurrentPiece][Rotate(px, py, nCurrentRotation)] == L'X') {
+				for (int px = 0; px < 4; px++) 
+				{
+					for (int py = 0; py < 4; py++) 
+					{
+						if (tetromino[nCurrentPiece][Rotate(px, py, nCurrentRotation)] == L'X') 
+						{
 							pField[(nCurrentY + py) * nFieldWidth + (nCurrentX + px)] = nCurrentPiece + 1;
 							nSpeedCounter = 0;
 						}
@@ -181,8 +204,12 @@ int main() {
 				}
 
 				nPieceCount++;
-				if (nPieceCount % 1 == 0) {
-					if (nSpeed >= 10)nSpeed--;
+				if (nPieceCount % 1 == 0) 
+				{
+					if (nSpeed >= 10)
+					{
+						nSpeed--;
+					}
 				}
 
 				// Check have we got any lines
@@ -211,7 +238,7 @@ int main() {
 				nCurrentPiece = rand() % 7;
 
 				// if piece does not fit
-				bGameOver = !DoesPeiceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY);
+				bGameOver = !DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY);
 			}
 		}
 		// RENDER OUTPUT ==========================================
@@ -220,7 +247,7 @@ int main() {
 		//Draw Field
 		for (int x = 0; x < nFieldWidth; x++) {
 			for (int y = 0; y < nFieldHeight; y++) {
-				screen[(y + 10) * nScreenWidth + (x + 32)] = L" ABCDEFG=#"[pField[y * nFieldWidth + x]];
+				screen[(y + 2) * nScreenWidth + (x + 2)] = L" ABCDEFG=#"[pField[y * nFieldWidth + x]];
 			}
 		}
 
@@ -228,7 +255,7 @@ int main() {
 		for (int px = 0; px < 4; px++) {
 			for (int py = 0; py < 4; py++) {
 				if (tetromino[nCurrentPiece][Rotate(px, py, nCurrentRotation)] != L'.')
-					screen[(nCurrentY + py + 10) * nScreenWidth + (nCurrentX + px + 32)] = nCurrentPiece + 65;
+					screen[(nCurrentY + py + 2) * nScreenWidth + (nCurrentX + px + 2)] = nCurrentPiece + 65;
 			}
 		}
 
@@ -249,6 +276,7 @@ int main() {
 			}
 			vLines.clear();
 		}
+
 		// Display Frame
 		WriteConsoleOutputCharacter(hConsole, screen, nScreenWidth * nScreenHeight, { 0,0 }, &dwBytesWritten);
 	}
