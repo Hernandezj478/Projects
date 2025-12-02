@@ -24,6 +24,7 @@
     <ProjectGuid>{ff21edb5-55b3-4442-8f67-cf560808fd1d}</ProjectGuid>
     <RootNamespace>WavePropogation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Wave Propagation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
