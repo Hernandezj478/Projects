@@ -11,7 +11,8 @@ public:
 	}
 
 protected:
-	virtual bool OnUserCreate() {
+	virtual bool OnUserCreate() 
+	{
 		
 		vecTrack.push_back(make_pair( 0.0f, 10.0f));
 		vecTrack.push_back(make_pair( 0.0f, 200.0f));
@@ -33,7 +34,8 @@ protected:
 
 		return true;
 	}
-	virtual bool OnUserUpdate(float fTimeElapsed) {
+	virtual bool OnUserUpdate(float fTimeElapsed)
+	{
 		if (m_keys[VK_UP].bHeld)
 			fSpeed += 2.0f * fTimeElapsed;
 		else
@@ -190,8 +192,6 @@ protected:
 			DrawStringAlpha(nCarPos, 86, L" \\\\\\ ####  \\\\\\");
 			break;
 		}
-		
-
 
 		// Draw stats
 		DrawString(0, 0, L"Distance: " + to_wstring(fDistance));
@@ -212,8 +212,6 @@ protected:
 			DrawString(10, j, disp_time(l));
 			j++;
 		}
-
-
 		return true;
 	}
 private:

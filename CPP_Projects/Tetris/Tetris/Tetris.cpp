@@ -141,7 +141,7 @@ int main()
 	int nCurrentX = nFieldWidth / 2;
 	int nCurrentY = 0;
 
-	bool bKey[4];
+	bool bKey[5];
 	bool bRotateHold = false;
 
 	bool bGameOver = false;
@@ -165,16 +165,17 @@ int main()
 		bForceDown = ((nSpeedCounter % 20 + 1) == nSpeed);
 
 		// INPUT ==================================================
-		for (int k = 0; k < 4; k++) 
+		for (int k = 0; k < 5; k++) 
 		{
-			bKey[k] = (0x8000 & GetAsyncKeyState((unsigned char)("\x27\x25\x28Z"[k]))) != 0; // Left Key, Right Key, Down Key, Z (Rotate)
+			bKey[k] = (0x8000 & GetAsyncKeyState((unsigned char)("\x27\x25\x28Z\x1B"[k]))) != 0; // Left Key, Right Key, Down Key, Z (Rotate), Escape (exit)
 		}
 
 		// GAME LOGIC =============================================
 		nCurrentX += (bKey[0] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX + 1, nCurrentY)) ? 1 : 0;
 		nCurrentX -= (bKey[1] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX - 1, nCurrentY)) ? 1 : 0;
 		nCurrentY += (bKey[2] && DoesPieceFit(nCurrentPiece, nCurrentRotation, nCurrentX, nCurrentY + 1)) ? 1 : 0;
-
+		if (bKey[4])
+			bGameOver = true;
 		if (bKey[3]) 
 		{
 			nCurrentRotation += (!bRotateHold && DoesPieceFit(nCurrentPiece, nCurrentRotation + 1, nCurrentX, nCurrentY)) ? 1 : 0;
