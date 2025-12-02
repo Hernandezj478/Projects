@@ -204,7 +204,7 @@ int main()
 				}
 
 				nPieceCount++;
-				if (nPieceCount % 1 == 0) 
+				if (nPieceCount % 10 == 0) 
 				{
 					if (nSpeed >= 10)
 					{
@@ -229,7 +229,10 @@ int main()
 				}
 
 				nScore += 25;
-				if (!vLines.empty())nScore += (1 << vLines.size()) * 100;
+				if (!vLines.empty())
+				{
+					nScore += (1 << vLines.size()) * 100;
+				}
 
 				// Choose next piece
 				nCurrentX = nFieldWidth / 2;
@@ -266,7 +269,7 @@ int main()
 			WriteConsoleOutputCharacter(hConsole, screen, nScreenWidth * nScreenHeight, { 0,0 }, &dwBytesWritten);
 			this_thread::sleep_for(400ms);	// Delay a bit
 
-			for (int v : vLines) {
+			for (int &v : vLines) {
 				for (int px = 1; px < nFieldWidth - 1; px++) {
 					for (int py = v; py > 0; py--) {
 						pField[py * nFieldWidth + px] = pField[(py - 1) * nFieldWidth + px];
